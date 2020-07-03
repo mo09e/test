@@ -1,0 +1,60 @@
+<html>
+<head>
+  <style type="text/css">
+  #content1 {
+    width: 700px;
+    margin: 0 auto;
+    background: #CCCCCC;
+  }
+  #content2 {
+    width: 700px;
+    height: 300px;
+    margin: 0 auto;
+    background: #848484;
+  }
+  #main {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: #333DFF;
+  }
+  #side {
+    float: left;
+    width: 400px;
+    height: 400px;
+    background: #27C42A;
+  }
+  /* 追記 */
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  /* #underを削除 */
+  /* 追記 */
+.top_menu li {
+  float: left;
+  padding: 15px;
+}
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+  <!-- 修正 -->
+  <div class="clearfix" id="content1">
+    <div id="main">メイン</div>
+    <div id="side">サイド</div>
+    <!-- underを削除 -->
+  </div>
+  <div id="content2">
+    コンテンツ2
+    <!-- clearfixを追記 -->
+<ul class="top_menu clearfix">
+  <li><a href="index.html">ホーム</a></li>
+  <li><a href="#">事業内容</a></li>
+  <li><a href="#">会社概要</a></li>
+  <li><a href="#">お問い合わせ</a></li>
+</ul>
+  </div>
+</body>
+</html>
